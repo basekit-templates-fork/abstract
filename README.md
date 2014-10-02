@@ -1,2 +1,2 @@
-protector
+abstract
 =========
