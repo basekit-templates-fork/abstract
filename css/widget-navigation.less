@@ -11,7 +11,12 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 
 // Nav
 .widget.extendednavigation {
-	margin-bottom: 12px;	
+	margin-bottom: 30px;
+
+	@media @desktop {
+		overflow: hidden;
+		border-radius: 6px;
+	}	
 
 	@media @tablet {
 		min-height: 48px;
@@ -48,18 +53,18 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 				-o-transform-origin: 		0% 0%;
 				-ms-transform-origin: 		0% 0%;
 				transform-origin: 			0% 0%;
-				padding-top: 48px;
+				padding-top: 47px;
 			}
 			@media @mobile {
-				padding-top: 40px;
+				padding-top: 41px;
 			}
 		}
 		& > ul.open {
 			@media @tablet {
-				
 				display: block;
-				background: fade(@color-swatch1, 92%);
-
+				background: transparent;
+				border-radius: 6px;
+				overflow: hidden;
 				-webkit-transform: rotateX(0deg);
 				-moz-transform: rotateX(0deg);
 				-o-transform: rotateX(0deg);
@@ -69,7 +74,6 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 		}
 		& > ul > li {
 			display: block;
-			margin-bottom: 1px;
 			background: @color-swatch2;
 		}
 	}
@@ -98,13 +102,13 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 			}
 
 			&:hover {
-				color: lighten(@color-swatch6, 12%);
+				color: @color-swatch6;
 				background: darken(@color-swatch2, 5%);
 			}
 		}
 
 		&.selected > a > .text {
-			background: @color-swatch6;
+			background: darken(@color-swatch2, 10%);
 			color: darken(@color-swatch1, 10%);
 
 			&:after {
@@ -113,7 +117,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 
 			&:hover {
 				color: darken(@color-swatch1, 10%);
-				background: @color-swatch6;
+				background: darken(@color-swatch2, 10%);
 			}
 		}
 
@@ -133,10 +137,10 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 		-moz-transition: background-color 0.25s ease-in-out;
 		-o-transition: background-color 0.25s ease-in-out;
 		transition: background-color 0.25s ease-in-out;
-		margin-right: 0;		
+		margin-right: 0;
 
 		&:hover > .text {
-			color: @color-swatch5;
+			color: @color-swatch6;
 			background-color: transparent;
 		}
 
@@ -191,15 +195,14 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 		min-width: 100%;
 		max-width: 300px;
 		z-index: 2000;
-		margin: 0 0 5px 0;
+		margin: 0;
 		position: relative;
 		display: block;
-		background-color: @color-swatch1;
+		background-color: @color-swatch2;
 		padding: 0 !important;
 
 		li {
-			background: darken(@color-swatch1, 6%);
-			margin-bottom: 1px;
+			background: lighten(@color-swatch2, 6%);
 			display: block;
 			width: 100%;
 			float: none;
@@ -223,6 +226,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 			right: 0;
 			top: 0;
 			z-index: 2000;
+			border-radius: 6px;
 	        &:hover {
 	           cursor: pointer;
 	        }
@@ -256,6 +260,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 		@media @tablet {
     	 	// Cross lines
     	 	background: @color-swatch2;
+    	 	border-radius: 6px 6px 0 0;
     	 	&:after, &:before {
     	 		  box-shadow: none;
     	 		  margin: 5px 0 0 -13px;

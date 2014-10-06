@@ -7,13 +7,11 @@
 .widget.blogsearch {
 	.form-block;
 	.block-widget;
-	padding-top: 0;
-	padding-bottom: 0;
+
 	@media @tablet {
 		background-color: transparent;
 	}
 
-	
     form {
 		.form-group {
 			// Flex
@@ -73,7 +71,7 @@
 		    }	   
         }
         input {  
-        	margin: 0;
+        	margin: 0 1em 0 0;
         	// Flex
             -webkit-box-ordinal-group: 1;
 		    -moz-box-ordinal-group: 1;
@@ -140,7 +138,7 @@
 				top: 0;
 				left: 0;
 				display: block;
-				background-color: lighten(@color-swatch1, 17%);
+				background-color: @color-swatch1;
 
 				@media @bp-layout-600 {
 			    	position: relative;
@@ -153,7 +151,7 @@
 			}
 
 			.blog-post-title {
-				padding: 30px;		
+				padding: 0 30px;		
 				position: relative;
 				font-family: @font-swatch1-font-family;
 			    font-weight: @font-swatch1-font-weight;
@@ -161,7 +159,7 @@
 			    letter-spacing: @font-swatch1-letter-spacing;
 			    font-size: (@font-swatch1-font-size * 0.8);
 			    position: relative;
-			    background: lighten(@color-swatch1, 10%);
+			    background: transparent;
 				@media @bp-layout-1100 {
 			    	min-height: 250px;
 			    	padding-left: 280px;
@@ -209,7 +207,6 @@
 			    	padding-left: 0;
 			    }
 				a {
-					line-height: 2;
 					padding: 0 16px;
 				}
 			}
@@ -217,7 +214,7 @@
 				color: fade(@color-swatch5, 50%);
 				line-height: 2;
 				float: right;
-				padding-right: 25px;
+				
 				@media @bp-layout-600 {
 			    	line-height: 1.6;
 			    }
@@ -247,7 +244,7 @@
 			z-index: 1000;
 			background-size: contain;
 			background-position: center;
-			background-color: lighten(@color-swatch1, 17%);
+			background-color: @color-swatch1;
 			
 
 			
@@ -369,6 +366,10 @@
 				background-size: 100%;
 				background-color: transparent;
 				float: left;
+				border: none;
+				margin-right: 1em;
+				box-shadow: none;
+
 				@media @mobile {
 					width: 30px;
 					height: 30px;

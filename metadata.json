@@ -12,55 +12,55 @@
 	"colorSwatches":
 	{
         "Swatch 1": {
-            "color1":"#2C2D2E",
-            "color2":"#1A1C20",
-            "color3":"#F06200",
+            "color1":"#33291F",
+            "color2":"#E3D3A2",
+            "color3":"#D9BB81",
             "color4":"#ffffff",
             "color5":"#ffffff",
-            "color6":"#F06200",
-            "color7":"#F06200"
+            "color6":"#2C2A26",
+            "color7":"#DA432E"
         },
         "Swatch 2": {
-            "color1":"#2C2D2E",
-            "color2":"#1A1C20",
-            "color3":"#00B1F0",
+            "color1":"#33291F",
+            "color2":"#E3B7A2",
+            "color3":"#D9BB81",
             "color4":"#ffffff",
             "color5":"#ffffff",
-            "color6":"#00B1F0",
-            "color7":"#00B1F0"
+            "color6":"#2C2A26",
+            "color7":"#E5C800"
         },
         "Swatch 3": {
-            "color1":"#5F5956",
-            "color2":"#302E2D",
-            "color3":"#F09300",
+            "color1":"#33291F",
+            "color2":"#E3F2EF",
+            "color3":"#D9BB81",
             "color4":"#ffffff",
             "color5":"#ffffff",
-            "color6":"#F09300",
-            "color7":"#F09300"
+            "color6":"#2C2A26",
+            "color7":"#DA432E"
         },
         "Swatch 4": {
-            "color1":"#3F3833",
-            "color2":"#2B2623",
-            "color3":"#03E878",
+            "color1":"#33291F",
+            "color2":"#F5F3EF",
+            "color3":"#C93D28",
             "color4":"#ffffff",
             "color5":"#ffffff",
-            "color6":"#03E878",
-            "color7":"#03E878"
+            "color6":"#2C2A26",
+            "color7":"#F5F3EF"
         },
         "Swatch 5": {
-          	"color1":"#5A5652",
-            "color2":"#43403C",
-            "color3":"#B0C401",
-            "color4":"#ffffff",
-            "color5":"#ffffff",
-            "color6":"#B0C401",
-            "color7":"#B0C401"
+          	"color1":"#33291F",
+            "color2":"#ECE69E",
+            "color3":"#00BDCF",
+            "color4":"#EAE7DD",
+            "color5":"#EAE7DD",
+            "color6":"#2C2A26",
+            "color7":"#ECE69E"
         }
 	},
 	"fontSwatch": {
 		"title": "Open Sans / Arial",
 		"font1": {
-			"font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+			"font-family": "\"Arvo\", Georgia, serif",
 			"font-size": "36px",
 			"font-weight": "400",
 			"line-height": "50px",
@@ -70,7 +70,7 @@
 			"letter-spacing": "inherit"
 		},
 		"font2": {
-			"font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+			"font-family": "\"Arvo\", Georgia, serif",
 			"font-size": "24px",
 			"font-weight": "400",
 			"line-height": "36px",
@@ -80,7 +80,7 @@
 			"letter-spacing": "inherit"
 		},
 		"font3": {
-			"font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+			"font-family": "\"Arvo\", Georgia, serif",
 			"font-size": "20px",
 			"font-weight": "400",
 			"line-height": "36px",
@@ -90,7 +90,7 @@
 			"letter-spacing": "inherit"
 		},
 		"font4": {
-			"font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+			"font-family": "\"Arvo\", Georgia, serif",
 			"font-size": "18px",
 			"font-weight": "400",
 			"line-height": "36px",
@@ -131,7 +131,7 @@
 			"letter-spacing": "inherit"
 		},
 		"font8": {
-			"font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+			"font-family": "\"Arvo\", Georgia, serif",
 			"font-size": "36px",
 			"font-weight": "400",
 			"line-height": "86px",
@@ -141,7 +141,7 @@
 			"letter-spacing": "inherit"
 		},
 		"font9": {
-			"font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+			"font-family": "\"Arvo\", Georgia, serif",
 			"font-size": "24px",
 			"font-weight": "400",
 			"line-height": "36px",
@@ -151,11 +151,11 @@
 			"letter-spacing": "inherit"
 		},
 		"font10": {
-			"font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+			"font-family": "\"Arvo\", Georgia, serif",
 			"font-size": "20px",
 			"font-weight": "400",
 			"line-height": "32px",
-			"color": "@color-swatch2",
+			"color": "@color-swatch1",
 			"background-color": "@color-swatch4",
 			"background-color-hover": "@color-swatch4",
 			"letter-spacing": "inherit"

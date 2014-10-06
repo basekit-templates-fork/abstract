@@ -68,7 +68,7 @@ body {
 }
 
 	.nav_section {
-		width: 350px;
+		width: 320px;
 		margin: 130px 0 0 130px;
 		float: left;
 		position: relative;
@@ -110,7 +110,7 @@ body {
 				margin-left: 480px;
 			}
 			@media @bp-layout-1200 {
-				margin-left: 420px;
+				margin-left: 370px;
 			}
 			@media @bp-layout-1000 {
 				margin-left: 30px;
@@ -124,7 +124,7 @@ body {
 			padding-left: 580px;
 			padding-right: 130px;
 			padding-top: 60px;
-			background: @color-swatch1;
+			background: fade(@color-swatch1, 70%);
 			padding-bottom: 100px;
 
 			
@@ -193,7 +193,8 @@ body {
 .company {
 	background: @color-swatch2;
 	padding: 30px;
-	margin-bottom: 12px;
+	margin-bottom: 30px;
+	border-radius: 6px;
 	@media @tablet {
 		-webkit-order: 3;
 	    -ms-flex-order: 3;
@@ -209,12 +210,13 @@ body {
 }
 
 .widget.logo {
-	margin-bottom: 30px;
+	margin-bottom: 16px;
 	@media @mobile {
 		margin-bottom: 20px;
 	}
 	.logo {
 		max-width: 260px;
+		margin: 0 auto;
 	}
 	.logo, img {
 		line-height: 0;
@@ -223,19 +225,19 @@ body {
 		max-width: 100%;
 		height: auto;
 		max-height: 150px;
+		display: block;
+		margin: 0 auto;
 	}
 }
 
 .widget.companyname {
-	text-align: left;
-	border-top: 1px solid lighten(@color-swatch1, 6%);
-	padding-top: 25px;
+	text-align: center;
 	@media @mobile {
 		padding-top: 10px;
 	}
 	
 	a {
-		color: @color-swatch4;
+		color: @font-swatch10-color;
 		@media @mobile {
 			font-size: (@font-swatch10-font-size * 0.8);
 		}
@@ -252,7 +254,10 @@ body {
 	.profile_widgets {
 		padding: 15px 30px;
 		background: @color-swatch2;
-		margin-bottom: 12px;
+		margin-bottom: 30px;
+		border-radius: 6px;
+		overflow: hidden;
+		text-align: center;
 		@media @tablet {
 			-webkit-order: 2;
 		    -ms-flex-order: 2;
@@ -316,7 +321,7 @@ body {
 .footer {
 	clear: both;
 	padding-left: 130px;
-	background: @color-swatch1;
+	background: @color-swatch2;
 
 	
 
@@ -372,7 +377,7 @@ body {
 		width: 350px;
 		margin-bottom: 0;
 		margin-right: 100px;
-		background-color: @color-swatch1;
+		background-color: @color-swatch2;
 
 		@media @bp-layout-1300 {
 			width: 320px;
@@ -410,7 +415,7 @@ body {
 
 	.profile_widgets {
 		background: @color-swatch2;
-		padding: 15px 30px;
+		padding: 15px 30px 15px 0;
 		.clearfix;
 
 		// Flex child
@@ -492,9 +497,7 @@ body {
 		}
 		@media @tablet {
 			margin-right: 20%;
-		}
-		@media @mobile {
-			margin-right: 15px;
+			padding-left: 0;
 		}
 	}
 	h2 {

@@ -5,18 +5,11 @@
 	</div>
 
 	{% if pages|length > 1 %}
-		{{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
+		{{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
 	{% endif %}
 
 	<div class="profile_widgets">
 		{{widget('profile', 'w_profile_1', { 'profileType':'phone' })|raw}}
 		{{widget('profile', 'w_profile_2', { 'profileType':'email' })|raw}}
+		{{widget('profile', 'w_profile_4', { 'profileType':'socialicons' })|raw}}
 	</div>
-
-	<div class="profile_widgets">
-		{{widget('profile', 'w_profile_3', { 'profileType':'address' })|raw}}
-		{{widget('profile', 'w_profile_4', { 'profileType':'socialicons', "showTplWidget":"0" })|raw}}
-	</div>
-
-
-

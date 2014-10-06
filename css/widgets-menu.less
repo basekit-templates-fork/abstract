@@ -28,8 +28,9 @@
 		.w_horizontal_spacing;
 		.w_vertical_spacing;
 		position: relative;
-		background: lighten(@color-swatch1, 10%);
+		background: @color-swatch2;
 		margin-bottom: 30px;
+		border-radius: 6px;
 		
 		.menu-name-background {
 			.menu-name {
@@ -37,10 +38,12 @@
 				border-bottom: none;
 				margin-bottom: 0;
 				padding: 0;
+				color: @color-swatch1;
 			}
 		}
 		.menu-description {
 			padding-top: 1em;
+			color: @color-swatch1;
 		}
 	}
 	.menu-items, .menu-items.odd {
@@ -87,7 +90,7 @@
 			font-size: @font-swatch2-font-size;
 			color: @color-swatch4;
 			text-align: left;
-			border-top: 7px solid lighten(@color-swatch1, 10%);
+			border-top: 7px solid @color-swatch2;
 			@media @tablet {
 				font-size: (@font-swatch2-font-size * 0.8);
 				border-top-width: 5px;
@@ -102,10 +105,11 @@
 		.menu-item-image-wrap {
 			background-size: contain;
 			margin-bottom: 0.7em;
-			background-color: lighten(@color-swatch1, 10%);
+			background-color: @color-swatch1;
 			height: 220px;
 			background-position: center;
-			border: 12px solid lighten(@color-swatch1, 10%);
+			border: 12px solid @color-swatch1;
+			border-radius: 6px;
 				       
 			img {
 				display: none;
@@ -113,7 +117,6 @@
 		}
 		// Price
 		.menu-item-price {
-			border-bottom: 1px solid lighten(@color-swatch1, 10%);
 			margin-bottom: 0.5em;
 			.standard-price {
 				text-align: center;
@@ -163,11 +166,15 @@
 		}
 		// Promoted item
 		&.menu-item-promoted {
+			// Image
+			.menu-item-image-wrap {
+				background-color: @color-swatch7;
+				border-color: @color-swatch7;
+			}
 			.menu-item-name {
 				border-top-color: @color-swatch7;
 			}
 			.menu-item-price {
-				border-bottom-color: @color-swatch7;
 				.standard-price {
 					color: @color-swatch7;
 				}
@@ -179,8 +186,10 @@
 		padding: 0;
 		margin: 0 0 40px;
 
+
 		.menu-subsection-wrapper {
-			border: 7px solid lighten(@color-swatch1, 10%);
+			border: 7px solid @color-swatch1;
+			border-radius: 6px;
 			@media @mobile {
 				border-width: 3px;
 			}		
@@ -193,7 +202,7 @@
 					font-size: @font-swatch2-font-size;
 					line-height: @font-swatch2-line-height;
 					color: @color-swatch4;
-					background: lighten(@color-swatch1, 10%);
+					background: @color-swatch1;
 					text-align: center;
 					margin-bottom: 1em;
 
@@ -252,7 +261,6 @@
 						}
 						// Price
 						.menu-item-price {
-							border-bottom-color: @color-swatch7;
 							.standard-price {
 								
 							}

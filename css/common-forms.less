@@ -20,15 +20,17 @@
 .blog-list-footer .paginate-older,
 .widget.clicktocall a,
 .menu-section-list li a,
-.widget.ecombasket .ecombasket-pull
+.widget.ecombasket .ecombasket-pull,
+.productlist-pagination-page a,
+.productlist-pagination-page span
 {
-	border-radius: 0;
+	border-radius: 6px;
 	padding: 0 30px;
 	display: inline-block;
 	cursor: pointer;
 	font-family: @font-swatch7-font-family;
 	font-weight: @font-swatch7-font-weight;
-	background-color: @color-swatch3;
+	box-shadow: inset 0px 0px 0px 3px @color-swatch3;
 	color: @font-swatch7-color;
 	font-size: @font-swatch7-font-size;
 	border: none;
@@ -38,7 +40,7 @@
 	-ms-user-select: none;      /* IE 10+ */
 	
 	line-height: (@font-swatch7-font-size * 3);
-
+	background-color: transparent;
 
 	-webkit-transition: all 0.1s linear;
 	-moz-transition: all 0.1s linear;
@@ -53,9 +55,8 @@
 	} 
 
 	&:hover {
-		background-color: transparent;
+		background-color: @color-swatch3;
 		text-decoration: none;
-		box-shadow: inset 0px 0px 0px 3px @color-swatch3;
 	}
 }
 
@@ -64,11 +65,11 @@
 .widget.tweet a,
 .widget.dropbox button,
 .widget.clicktocall a {
-	padding-left: 50px;
-	background-position: 18px center;
+	padding-left: 60px;
+	background-position: 28px center;
 	&:hover {
-		padding-left: 50px;
-		background-position: 18px center;
+		padding-left: 60px;
+		background-position: 28px center;
 	}
 }
 
@@ -86,7 +87,7 @@
 .signupform fieldset input {
 	background: #fff;
 	border: none;
-	border-radius: 0;
+	border-radius: 6px;
 	padding: 0 1em;
 	text-indent: 0;
 	height: (@font-swatch7-font-size * 3 );
