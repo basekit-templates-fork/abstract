@@ -15,10 +15,15 @@
 
 .widget.menu {
 	.main {
+		.c_clearfix;
 		@media @mobile {
 			padding-bottom: 20px;
 			margin-bottom: 20px;
 		}
+		@media @tablet {
+			clear: both !important;
+		}
+
 		&:last-of-type {
 			margin-bottom: 0;
 		}
@@ -45,6 +50,9 @@
 			padding-top: 1em;
 			color: @color-swatch1;
 		}
+	}
+	.menu-items {
+		.c_clearfix;
 	}
 	.menu-items, .menu-items.odd {
 		padding: 0;
