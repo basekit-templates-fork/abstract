@@ -1,0 +1,15 @@
+
+	<div class="company">
+		{{widget('logo', 'w_logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+		{{widget('companyname', 'w_companyname', {"business": "profile", "align":"center"})|raw}}
+	</div>
+
+	{% if pages|length > 1 %}
+		{{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
+	{% endif %}
+
+	<div class="profile_widgets">
+		{{widget('profile', 'w_profile_1', { 'profileType':'phone' })|raw}}
+		{{widget('profile', 'w_profile_2', { 'profileType':'email' })|raw}}
+		{{widget('profile', 'w_profile_4', { 'profileType':'socialicons' })|raw}}
+	</div>
