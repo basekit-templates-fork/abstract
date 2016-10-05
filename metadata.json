@@ -1,5 +1,6 @@
 {
 	"name":"Meadow Sunset",
+	"screenshot":"meadow-sunset-screenshot.jpg",
 	"thumbnail":"meadow-sunset.png",
 	"templateType":"standard",
 	"pageTypes": ["home"], 
