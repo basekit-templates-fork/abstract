@@ -115,8 +115,8 @@
 			"font-size": "16px",
 			"font-weight": "400",
 			"line-height": "35px",
-			"color": "@color-swatch1",
-			"color-hover": "@color-swatch1",
+			"color": "@color-swatch6",
+			"color-hover": "@color-swatch6",
 			"background-color": "@color-swatch6",
 			"background-color-hover": "@color-swatch2",
 			"letter-spacing": "inherit"

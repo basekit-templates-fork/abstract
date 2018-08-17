@@ -93,7 +93,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 		// Item Text
 		& > .text, a .text {
 			padding: 0.8em 30px;
-			color: @color-swatch6;
+			color: @font-swatch6-color;
 			display: block;
 			position: relative;
 
@@ -102,21 +102,21 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 			}
 
 			&:hover {
-				color: @color-swatch6;
+				color: darken(@font-swatch6-color, 10%);
 				background: darken(@color-swatch2, 5%);
 			}
 		}
 
 		&.selected > a > .text {
 			background: darken(@color-swatch2, 10%);
-			color: darken(@color-swatch1, 10%);
+			color: darken(@font-swatch6-color, 10%);
 
 			&:after {
 				border-color: darken(@color-swatch1, 10%) transparent transparent transparent;
 			}
 
 			&:hover {
-				color: darken(@color-swatch1, 10%);
+				color: darken(@font-swatch6-color, 10%);
 				background: darken(@color-swatch2, 10%);
 			}
 		}
@@ -125,8 +125,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 		a {
 			position: relative;
 			padding: 0;
-			color: @color-swatch6;
-		
+			color: @font-swatch6-color;
 		}
 	}
 
