@@ -1,0 +1,58 @@
+
+// -----------------------------
+//  Migration Styles
+// -----------------------------
+
+
+#migrated-site {
+
+
+    // Stylesheet overrides
+    // -----------------------------
+
+
+    .page-content {
+        padding: 0;
+    }
+
+
+
+
+    // Migration styles
+    // -----------------------------
+
+    .empty-zone,
+    #page-zones__main:empty,
+    #page-zones__main > .widget:not([data-name="row"]),
+    [data-name="row"]:not(.widget):not(.row--width-no-padding) .row__container {
+        margin-left: 580px;
+        margin-right: auto;
+        max-width: ~"calc(100% - 710px)";
+        width: 100%;
+    }
+
+
+    // Move spacing to first widget in the main zone (not sections)
+    &.edit #page-zones__main-overlay + .widget:not([data-name="row"]),
+    #page-zones__main > .widget:not([data-name="row"]):first-child {
+        margin-top: 60px;
+    }
+
+
+    // Move spacing to last widget in the main zone (not sections)
+    #page-zones__main > .widget:not([data-name="row"]):last-child {
+        margin-bottom: 100px;
+    }
+
+
+    // Add spacing to the top of a widget or section when it follows a widget / section
+    #page-zones__main > [data-name="row"] + .widget:not([data-name="row"]),
+    #page-zones__main > .widget:not([data-name="row"]) + [data-name="row"] {
+        margin-top: 30px;
+    }
+
+
+    #page-zones__main > [data-name="row"] + .widget:not(.row) {
+        margin-bottom: 30px;
+    }
+}
